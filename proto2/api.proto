@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "github.com/micro/go-api/proto/api.proto";
+
+service Newapi {
+	rpc Call(go.api.Request) returns(go.api.Response) {};
+}
+
+service Newapi2 {
+	rpc Bar(go.api.Request) returns(go.api.Response) {};
+}
